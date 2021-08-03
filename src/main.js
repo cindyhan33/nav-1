@@ -3,8 +3,11 @@ const $lastLi = $siteList.find("li.last");
 const x = localStorage.getItem("x");
 const xObject = JSON.parse(x);
 const hashMap = xObject || [
-  { logo: "A", url: "https://animista.net" },
-  { logo: "B", url: "http://www.bootcdn.cn" },
+  { logo: "B", url: "https://www.bilibili.com" },
+  { logo: "I", url: "https://www.iqiyi.com" },
+  { logo: "J", url: "https://www.jd.com" },
+  { logo: "T", url: "https://www.taobao.com" },
+  { logo: "Z", url: "https://www.zhihu.com" },
 ];
 const simplifyUrl = (url) => {
   return url.replace("https://", "").replace("http://", "").replace("www.", "");

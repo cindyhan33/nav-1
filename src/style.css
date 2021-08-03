@@ -18,7 +18,15 @@ a {
   text-decoration: none;
 }
 body {
-  background: #eee;
+  background-color: #eee;
+  background-image: url(../20.png);
+}
+@media (min-width: 500px) {
+  body {
+    background-image: url(../20.png);
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+  }
 }
 .globalHeader {
   margin: 20px;
@@ -114,8 +122,12 @@ body {
   position: absolute;
   right: 4px;
   top: 0;
-  display: none;
   font-size: 28px;
+}
+@media (min-width: 500px) {
+  .siteList .site > .close {
+    display: none;
+  }
 }
 .siteList .site:hover > .close {
   display: block;
